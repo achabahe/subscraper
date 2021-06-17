@@ -65,7 +65,11 @@ Once the output report is complete, users can check for subdomain takeover oppor
 subscraper --takeover subscraper_report.txt
 ```
 
-
+#### Docker
+In hurry just run this docker image
+```bash
+docker run --rm -it --network host achabahe/subscraper subscraper example.com | tee dns_recon.example.com
+```
 ## All Options
 ```
 SubScraper Options:
